@@ -74,7 +74,7 @@ export default class PrismaDatastoreEventHandler implements AppEventHandler {
     const formatConnectedFleetData = fleetUIDs.map((fleet) => ({
       create: {
         fleetUID: fleet,
-        projectID: project.id,
+        projectID: project.projectUID,
       },
       where: {
         fleetUID: fleet,
